@@ -67,10 +67,10 @@ const handlePizzaSubmit = event => {
     .catch(err => {
       console.log(err);
       saveRecord(formData);
+      // DO INDEXED DB STUFF HERE
     });
 };
 
 $pizzaForm.addEventListener('submit', handlePizzaSubmit);
 $addToppingBtn.addEventListener('click', handleAddTopping);
-
 
